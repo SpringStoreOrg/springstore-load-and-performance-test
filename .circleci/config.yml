@@ -1,0 +1,20 @@
+version: 2.1
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      # Checkout the code as the first step.
+      - checkout
+      - run:
+          name: Build
+          command: mvn -B -DskipTests clean package
+      # Then run your tests!
+      - run:
+          name: Performance Tests Build Job
+          command: mvn clean verify   
+workflows:
+  mvn-build-and-test:
+    jobs:
+      - build-and-test
