@@ -9,7 +9,7 @@
 
 Fork source code to local machine. Open file [getProducts.jmx](src/test/jmeter/getProducts.jmx) for more detail about test scenario.
 
-![JMeter application](https://thumbs2.imgbox.com/22/20/SuduKaif_t.png)
+![JMeter application](https://thumbs2.imgbox.com/fc/3c/jptfcCyr_t.png)
 
 ### Installing
 
